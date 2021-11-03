@@ -1,6 +1,8 @@
 package exercise4;
+
 import java.util.Scanner;
 import java.util.Arrays;
+
 public class MinIndex {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -10,7 +12,7 @@ public class MinIndex {
         int minIndex = 0;
         for (int i = 0; i < size; i++) {
             numbers[i] = input.nextFloat();
-            if(numbers[i]<min){
+            if (numbers[i] < min) {
                 min = numbers[i];
                 minIndex = i;
             }
