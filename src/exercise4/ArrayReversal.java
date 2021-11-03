@@ -11,14 +11,13 @@ public class ArrayReversal {
         char[] symbolsReversed = new char[size];
         for (int i = 0; i < size; i++) {
             symbols[i] = input.next().charAt(0);
-
         }
         int k = 0;
-        for(int i = size; i>0;i--){
-            symbols[k] = symbolsReversed[i - 1];
+        for(int i = size; i!=0;i--){
+            symbolsReversed[i - 1] = symbols[k];
             k++;
         }
         String numbersAsString = Arrays.toString(symbolsReversed);
-        System.out.println("Numbers: " + numbersAsString);
+        System.out.println("Reversed symbols: " + numbersAsString);
     }
 }
